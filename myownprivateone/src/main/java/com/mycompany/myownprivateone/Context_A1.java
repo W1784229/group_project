@@ -26,77 +26,35 @@ public class Context_A1 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        OrderingBtn = new swing.MyButton();
-        ExchangingBtn = new swing.MyButton();
-        AppointmentBtn = new swing.MyButton();
-        ShoppingBtn = new swing.MyButton();
-        IntroductionBtn = new swing.MyButton();
-        EmploymentBtn = new swing.MyButton();
-        InvitationBtn = new swing.MyButton();
-        SocialisingBtn = new swing.MyButton();
-        DirectionBtn = new swing.MyButton();
-        UniversityBtn = new swing.MyButton();
-        CulturalBtn = new swing.MyButton();
         jLabel2 = new javax.swing.JLabel();
         backBtn = new swing.MyButton();
         jLabel1 = new javax.swing.JLabel();
+        A1_Cmb = new javax.swing.JComboBox<>();
+        A1_Sub_Cmb = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
-
-        OrderingBtn.setBackground(new java.awt.Color(125, 229, 251));
-        OrderingBtn.setForeground(new java.awt.Color(40, 40, 40));
-        OrderingBtn.setText("Ordering food and drink");
-
-        ExchangingBtn.setBackground(new java.awt.Color(125, 229, 251));
-        ExchangingBtn.setForeground(new java.awt.Color(40, 40, 40));
-        ExchangingBtn.setText("Exchanging personal information");
-
-        AppointmentBtn.setBackground(new java.awt.Color(125, 229, 251));
-        AppointmentBtn.setForeground(new java.awt.Color(40, 40, 40));
-        AppointmentBtn.setText("Making appointments");
-
-        ShoppingBtn.setBackground(new java.awt.Color(125, 229, 251));
-        ShoppingBtn.setForeground(new java.awt.Color(40, 40, 40));
-        ShoppingBtn.setText("Going shopping and asking for prices");
-
-        IntroductionBtn.setBackground(new java.awt.Color(125, 229, 251));
-        IntroductionBtn.setForeground(new java.awt.Color(40, 40, 40));
-        IntroductionBtn.setText("Introductions");
-
-        EmploymentBtn.setBackground(new java.awt.Color(125, 229, 251));
-        EmploymentBtn.setForeground(new java.awt.Color(40, 40, 40));
-        EmploymentBtn.setText("Basic employment issues");
-
-        InvitationBtn.setBackground(new java.awt.Color(125, 229, 251));
-        InvitationBtn.setForeground(new java.awt.Color(40, 40, 40));
-        InvitationBtn.setText("Making invitations");
-
-        SocialisingBtn.setBackground(new java.awt.Color(125, 229, 251));
-        SocialisingBtn.setForeground(new java.awt.Color(40, 40, 40));
-        SocialisingBtn.setText("Socialising in the country");
-
-        DirectionBtn.setBackground(new java.awt.Color(125, 229, 251));
-        DirectionBtn.setForeground(new java.awt.Color(40, 40, 40));
-        DirectionBtn.setText("Asking and giving directions");
-
-        UniversityBtn.setBackground(new java.awt.Color(125, 229, 251));
-        UniversityBtn.setForeground(new java.awt.Color(40, 40, 40));
-        UniversityBtn.setText("University life");
-
-        CulturalBtn.setBackground(new java.awt.Color(125, 229, 251));
-        CulturalBtn.setForeground(new java.awt.Color(40, 40, 40));
-        CulturalBtn.setText("Cross-cultural experiences");
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(69, 68, 68));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Context");
+        jLabel2.setText("Level A1");
 
         backBtn.setForeground(new java.awt.Color(40, 40, 40));
         backBtn.setText("Back");
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        jLabel1.setText("Level A1");
+        jLabel1.setText("Context:");
+
+        A1_Cmb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ordering food and drink", "Exchanging personal information", "Making appointments", "Going Shopping and asking for prices", "Introductions", "Basic employment issues", "Making invitations", "Socialising in the country", "Asking and giving directions", "University life", "Cross-cultural experieneces" }));
+        A1_Cmb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                A1_CmbActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel3.setText("Sub-Context:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -107,79 +65,113 @@ public class Context_A1 extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(CulturalBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(UniversityBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(DirectionBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(SocialisingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(InvitationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(EmploymentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(IntroductionBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(ShoppingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(AppointmentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(ExchangingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(OrderingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
+                                .addComponent(A1_Cmb, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(A1_Sub_Cmb, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addContainerGap(50, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 50, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(134, 134, 134)
-                .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
-                .addGap(18, 18, Short.MAX_VALUE)
-                .addComponent(OrderingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(A1_Cmb, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(ExchangingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(AppointmentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(ShoppingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(IntroductionBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(EmploymentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(InvitationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(SocialisingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(DirectionBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(UniversityBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(CulturalBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(A1_Sub_Cmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void A1_CmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A1_CmbActionPerformed
+        if(A1_Cmb.getSelectedItem().equals("Ordering food and drink")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Takeaway");
+            A1_Sub_Cmb.addItem("Coffee Order");
+            A1_Sub_Cmb.addItem("Water for table");
+            A1_Sub_Cmb.addItem("Reservation");
+            A1_Sub_Cmb.addItem("Cocktails by card payment");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Exchanging personal information")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Social Media");
+            A1_Sub_Cmb.addItem("Instagram");
+            A1_Sub_Cmb.addItem("Neighbour's parcel");
+            A1_Sub_Cmb.addItem("Description of town");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Making appointments")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Booking");
+            A1_Sub_Cmb.addItem("Spelling your name");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Going Shopping and asking for prices")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Payment");
+            A1_Sub_Cmb.addItem("Refund");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Introductions")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Repeat name");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Basic employment issues")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Interview");
+            A1_Sub_Cmb.addItem("Cover");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Making invitations")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Disneyland");
+            A1_Sub_Cmb.addItem("Help with child's birthday party");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Socialising in the country")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Disneyland");
+            A1_Sub_Cmb.addItem("Help with child's birthday party");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Asking and giving directions")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Delivery Driver");   
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("University life")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("Study in cafe");
+        }
+        else
+        if(A1_Cmb.getSelectedItem().equals("Cross-cultural experieneces")){
+            A1_Sub_Cmb.setSelectedItem(null);
+            A1_Sub_Cmb.addItem("International food");
+        }
+    }//GEN-LAST:event_A1_CmbActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private swing.MyButton AppointmentBtn;
-    private swing.MyButton CulturalBtn;
-    private swing.MyButton DirectionBtn;
-    private swing.MyButton EmploymentBtn;
-    private swing.MyButton ExchangingBtn;
-    private swing.MyButton IntroductionBtn;
-    private swing.MyButton InvitationBtn;
-    private swing.MyButton OrderingBtn;
-    private swing.MyButton ShoppingBtn;
-    private swing.MyButton SocialisingBtn;
-    private swing.MyButton UniversityBtn;
+    private javax.swing.JComboBox<String> A1_Cmb;
+    private javax.swing.JComboBox<String> A1_Sub_Cmb;
     private swing.MyButton backBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

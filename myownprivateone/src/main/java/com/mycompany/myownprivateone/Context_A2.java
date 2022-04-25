@@ -26,72 +26,19 @@ public class Context_A2 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        OrderingBtn = new swing.MyButton();
-        ExchangingBtn = new swing.MyButton();
-        AppointmentBtn = new swing.MyButton();
-        ShoppingBtn = new swing.MyButton();
-        IntroductionBtn = new swing.MyButton();
-        HealthBtn = new swing.MyButton();
-        InvitationBtn = new swing.MyButton();
-        SocialisingBtn = new swing.MyButton();
-        DirectionBtn = new swing.MyButton();
-        TravelBtn = new swing.MyButton();
-        CulturalBtn = new swing.MyButton();
         jLabel2 = new javax.swing.JLabel();
         backBtn = new swing.MyButton();
-        WeatherBtn = new swing.MyButton();
-        jLabel1 = new javax.swing.JLabel();
+        A2_Cmb = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
+        A2_Sub_Cmb = new javax.swing.JComboBox<>();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
-
-        OrderingBtn.setBackground(new java.awt.Color(125, 229, 251));
-        OrderingBtn.setForeground(new java.awt.Color(40, 40, 40));
-        OrderingBtn.setText("Ordering food and drink");
-
-        ExchangingBtn.setBackground(new java.awt.Color(125, 229, 251));
-        ExchangingBtn.setForeground(new java.awt.Color(40, 40, 40));
-        ExchangingBtn.setText("Exchanging personal information");
-
-        AppointmentBtn.setBackground(new java.awt.Color(125, 229, 251));
-        AppointmentBtn.setForeground(new java.awt.Color(40, 40, 40));
-        AppointmentBtn.setText("Making appointments");
-
-        ShoppingBtn.setBackground(new java.awt.Color(125, 229, 251));
-        ShoppingBtn.setForeground(new java.awt.Color(40, 40, 40));
-        ShoppingBtn.setText("Going shopping and asking for prices");
-
-        IntroductionBtn.setBackground(new java.awt.Color(125, 229, 251));
-        IntroductionBtn.setForeground(new java.awt.Color(40, 40, 40));
-        IntroductionBtn.setText("Introductions");
-
-        HealthBtn.setBackground(new java.awt.Color(125, 229, 251));
-        HealthBtn.setForeground(new java.awt.Color(40, 40, 40));
-        HealthBtn.setText("Health matters");
-
-        InvitationBtn.setBackground(new java.awt.Color(125, 229, 251));
-        InvitationBtn.setForeground(new java.awt.Color(40, 40, 40));
-        InvitationBtn.setText("Making invitations");
-
-        SocialisingBtn.setBackground(new java.awt.Color(125, 229, 251));
-        SocialisingBtn.setForeground(new java.awt.Color(40, 40, 40));
-        SocialisingBtn.setText("Socialising in the country");
-
-        DirectionBtn.setBackground(new java.awt.Color(125, 229, 251));
-        DirectionBtn.setForeground(new java.awt.Color(40, 40, 40));
-        DirectionBtn.setText("Asking and giving directions");
-
-        TravelBtn.setBackground(new java.awt.Color(125, 229, 251));
-        TravelBtn.setForeground(new java.awt.Color(40, 40, 40));
-        TravelBtn.setText("Making travel arrangements");
-
-        CulturalBtn.setBackground(new java.awt.Color(125, 229, 251));
-        CulturalBtn.setForeground(new java.awt.Color(40, 40, 40));
-        CulturalBtn.setText("Cross-cultural experiences");
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(69, 68, 68));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Context");
+        jLabel2.setText("Level A2");
 
         backBtn.setForeground(new java.awt.Color(40, 40, 40));
         backBtn.setText("Back");
@@ -101,17 +48,18 @@ public class Context_A2 extends javax.swing.JPanel {
             }
         });
 
-        WeatherBtn.setBackground(new java.awt.Color(125, 229, 251));
-        WeatherBtn.setForeground(new java.awt.Color(40, 40, 40));
-        WeatherBtn.setText("Weather");
-        WeatherBtn.addActionListener(new java.awt.event.ActionListener() {
+        A2_Cmb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Introductions", "Making appointments", "Asking and giving directions", "Making invitations", "Ordering food and drink", "Going shopping and asking for prices", "Health matters", "Socialising in the country", "Making travel arrangements", "Exchanging personal information", "Cross-cultural experieneces", "Weather" }));
+        A2_Cmb.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                WeatherBtnActionPerformed(evt);
+                A2_CmbActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        jLabel1.setText("Level A2");
+        jLabel3.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel3.setText("Context:");
+
+        jLabel4.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jLabel4.setText("Sub-Context:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -120,89 +68,135 @@ public class Context_A2 extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(DirectionBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(CulturalBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TravelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(SocialisingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(InvitationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(OrderingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ShoppingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(HealthBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ExchangingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(IntroductionBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(AppointmentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(WeatherBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 50, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(137, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(130, 130, 130))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(119, 119, 119))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(A2_Sub_Cmb, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(backBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
+                            .addComponent(A2_Cmb, javax.swing.GroupLayout.Alignment.LEADING, 0, 236, Short.MAX_VALUE))
+                        .addGap(0, 50, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
                 .addGap(18, 18, Short.MAX_VALUE)
-                .addComponent(IntroductionBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(A2_Cmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(AppointmentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(DirectionBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(InvitationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(OrderingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(ShoppingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(HealthBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(SocialisingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(TravelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(ExchangingBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(CulturalBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(WeatherBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(A2_Sub_Cmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void WeatherBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WeatherBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_WeatherBtnActionPerformed
-
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_backBtnActionPerformed
 
+    private void A2_CmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A2_CmbActionPerformed
+        if(A2_Cmb.getSelectedItem().equals("Introductions")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("1st dat in job");
+            A2_Sub_Cmb.addItem("Job offer");
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Making appointments")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Dentist");
+            A2_Sub_Cmb.addItem("Doctor");
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Asking and giving directions")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Delivery Driver");
+            A2_Sub_Cmb.addItem("Hospital Visit");
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Making invitations")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Charity");
+            A2_Sub_Cmb.addItem("Lunch");
+            A2_Sub_Cmb.addItem("Children at wedding");
+            A2_Sub_Cmb.addItem("Lunch");
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Ordering food and drink")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Vegan pizza");
+            A2_Sub_Cmb.addItem("Reservation");
+            A2_Sub_Cmb.addItem("Delayed drinks order");
+            A2_Sub_Cmb.addItem("QR Code");
+            A2_Sub_Cmb.addItem("Cocktails (1)");
+            A2_Sub_Cmb.addItem("Cocktails (2)");
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Going shopping and asking for prices")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Payment");
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Health matters")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Visiting patient");
+            A2_Sub_Cmb.addItem("Sick relative");
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Socialising in the country")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Succulent");
+            A2_Sub_Cmb.addItem("Family size");
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Making travel arrangements")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Expired tickets");   
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Exchanging personal information")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Age restricted");  
+        }
+        else
+        if(A2_Cmb.getSelectedItem().equals("Cross-cultural experieneces")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Omelette");  
+        }     
+        else
+        if(A2_Cmb.getSelectedItem().equals("Weather")){
+            A2_Sub_Cmb.removeAllItems();
+            A2_Sub_Cmb.setSelectedItem(null);
+            A2_Sub_Cmb.addItem("Clothing for weather");  
+        }    
+    }//GEN-LAST:event_A2_CmbActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private swing.MyButton AppointmentBtn;
-    private swing.MyButton CulturalBtn;
-    private swing.MyButton DirectionBtn;
-    private swing.MyButton ExchangingBtn;
-    private swing.MyButton HealthBtn;
-    private swing.MyButton IntroductionBtn;
-    private swing.MyButton InvitationBtn;
-    private swing.MyButton OrderingBtn;
-    private swing.MyButton ShoppingBtn;
-    private swing.MyButton SocialisingBtn;
-    private swing.MyButton TravelBtn;
-    private swing.MyButton WeatherBtn;
+    private javax.swing.JComboBox<String> A2_Cmb;
+    private javax.swing.JComboBox<String> A2_Sub_Cmb;
     private swing.MyButton backBtn;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
