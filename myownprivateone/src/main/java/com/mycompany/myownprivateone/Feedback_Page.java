@@ -132,7 +132,15 @@ public class Feedback_Page extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void SubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitBtnActionPerformed
-
+        f= new JFrame();
+        if(FeedbackTxt.getText() == null || AgeTxt.getText() == null)
+            {
+                JOptionPane.showMessageDialog(f, "Please don't leave any of the fields empty");
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(f, "Thank you for your submitted feedback, we will read these and make changes accordingly");
+            }
     }//GEN-LAST:event_SubmitBtnActionPerformed
 
     private void ResetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ResetBtnActionPerformed
