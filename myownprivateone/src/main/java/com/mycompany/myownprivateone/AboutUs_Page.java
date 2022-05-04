@@ -8,12 +8,12 @@ package com.mycompany.myownprivateone;
  *
  * @author Ibraheem
  */
-public class Help_Page extends javax.swing.JPanel {
+public class AboutUs_Page extends javax.swing.JPanel {
 
     /**
-     * Creates new form Help_Page
+     * Creates new form AboutUs_Page
      */
-    public Help_Page() {
+    public AboutUs_Page() {
         initComponents();
     }
 
@@ -27,30 +27,30 @@ public class Help_Page extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        backBtn = new swing.MyButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        backBtn = new swing.MyButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(69, 68, 68));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Help page");
-
-        backBtn.setForeground(new java.awt.Color(40, 40, 40));
-        backBtn.setText("Back");
+        jLabel2.setText("About us");
 
         jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextArea1.setLineWrap(true);
-        jTextArea1.setText("Welcome to our language app, this app is designed to help users such as yourself learn different languages by taking on different conversations between two people and reacting to them. This could be done by yourself or with a friend. The application is very simple, first choose a language level you would like to attempt, then choose the type of context you would like to learn as well as subcontext, once you have chosen what you would like to learn, click the go button to proceed to the final step. On this step, you would first learn the keywords then reenact the conversation between person A and B by translating the english conversation to the language you are learning.");
+        jTextArea1.setText("This lanuage app was made by three students as a prototype.\n1) Rabuil Alam (W1758597)\n2) Seyed Avin (W1771719)\n3) Ibraheem Ahmed (W1784229)\nThis app was created in order to help students from different backgrounds learn new languages by engaging in different converstations and reenacting them to role play. This allows the users/students to learn keywords for the lanuage so they are able to talk more fluently and engage in conversations that they weren't able to before.");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextArea1.setEnabled(false);
         jScrollPane1.setViewportView(jTextArea1);
+
+        backBtn.setForeground(new java.awt.Color(40, 40, 40));
+        backBtn.setText("Back");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -58,11 +58,15 @@ public class Help_Page extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE))
+                        .addGap(50, 50, 50))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -71,9 +75,9 @@ public class Help_Page extends javax.swing.JPanel {
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
